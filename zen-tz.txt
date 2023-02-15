@@ -1,0 +1,38 @@
+Нужно написать, что выведет каждая функция и пояснить почему.
+
+fun q1() {
+    for (i in 3..1) {
+        print(i)
+    }
+}
+
+fun q2() = runBlocking {
+    launch {
+        delay(1000L)
+        print("1")
+    }
+    print("2")
+}
+
+fun q3() {
+    print(0x10)
+}
+
+fun q4() {
+    val letters = hashSetOf(1, 2, 3, 4)
+    letters.forEach { print(it) }
+}
+// Варианты: 
+//  1) 1234
+//  2) 4321
+//  3) 3142
+//  4) все что угодно
+
+fun q5(): Boolean {
+    print(print("1") == print("2") == return true)
+}
+// Варианты: 
+//  1) 12
+//  2) 12false
+//  3) 12true
+//  4) Не скомпилируется
